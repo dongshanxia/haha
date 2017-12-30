@@ -1,0 +1,400 @@
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+   <%@ include file="/common/commonapp.jspf"%>
+    <title>学生管理平台</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    
+
+</head>
+
+
+<script type="text/javascript">
+	window.onload = function(){ 
+	$("#teac_top").load("${proPath}/app/teac_top.action");
+		
+	    $.ajax({
+	        url: "${proPath}/app/teac_select.action",
+	        type: "POST",
+	        dataType: "json",
+	        //data: { "ID": row["ID"] },
+	        success: function (res) {
+	  
+	        	        
+	        	var json = eval(res.contactResult); //数组 	      	        	
+	             $.each(json, function (index, item) {  
+	                 //循环获取数据    
+	                 var contactPhone = json[index].contactPhone;  
+	                 var contactAddress = json[index].contactAddress;  
+	                 var contactEmail = json[index].contactEmail;
+	                 var contactPost = json[index].contactPost;
+	                 
+	                 $("#contact").html($("#contact").html()+ 
+	                		 "<div> &nbsp;<strong>号码:</strong>" + contactPhone  + "</div>"+
+	                		 "<div> &nbsp;<strong>地址:</strong>" + contactAddress + "</div>"+
+	                		 "<div> &nbsp;<strong>邮箱:</strong>" + contactEmail +  "</div>"+
+	                		 "<div> &nbsp;<strong>船政:</strong>" + contactPost +  "</div>"+
+	                		 "<div> &nbsp;<strong></strong>" +   "</div>"
+	                 );  
+	             });
+	        	
+	             var json2 = eval(res.educationResult); //数组 	      	        	
+	             $.each(json2, function (index, item) {  
+	                 //循环获取数据    
+	                 var contactPhone = json2[index].contactPhone;  
+	                 var contactAddress = json2[index].contactAddress;  
+	                 var contactEmail = json22[index].contactEmail;
+	                 var contactPost = json2[index].contactPost;
+	                 
+	                 $("#contact").html($("#contact").html()+ 
+	                		 "<div> &nbsp;<strong>号码:</strong>" + contactPhone  + "</div>"+
+	                		 "<div> &nbsp;<strong>地址:</strong>" + contactAddress + "</div>"+
+	                		 "<div> &nbsp;<strong>邮箱:</strong>" + contactEmail +  "</div>"+
+	                		 "<div> &nbsp;<strong>船政:</strong>" + contactPost +  "</div>"+
+	                		 "<div> &nbsp;<strong></strong>" +   "</div>"
+	                 );  
+	             });
+	        	
+	        	
+	        	
+	        },
+	        error: function (error) {
+	            alert(JSON.stringify(error));
+	        }
+	    });	
+		
+		
+	}
+
+    </script>
+
+
+<body>
+
+	<div class="row">
+		
+		<!--
+        	作者：984801940@qq.com
+        	时间：2017-03-06
+        	描述：最左边
+        -->
+		<div class="col-md-3">
+			
+		</div>
+		
+		<div class="col-md-6">
+			
+			<div class="top" id="teac_top">
+				
+			</div>
+			
+			
+	<div>
+		<nav class = "navbar navbar-default" role = "navigation">        
+	        <div>  
+	            <ul class="nav navbar-nav">  
+	               <li ><a href="app/teac_home.action"" >个人信息</a></li> 
+	               <li ><a href="app/teac_kxyj.action" >科学研究</a></li> 
+	               <li ><a href="#" >论文专著</a></li> 
+	               <li ><a href="#" >科研团队</a></li> 
+	            </ul>            
+	        </div>  
+	    </nav> 
+	</div>		
+	  
+		
+					
+				<div class="">
+
+					<div class="row">
+
+						<div class="col-md-4">
+
+							<div class="col-md-11">
+
+								<div class="main-left-border2">
+
+									<div>
+										<strong>基本信息</strong>
+									</div>
+									<div align="center">
+										<div>
+											<img src="${proPath}/img/test1.png" />
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											猫
+										</div>
+										<div>
+											聪明的猫
+										</div>
+
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											<div class="col-md-3">
+
+											</div>
+											<div style="color: #FFFFFF;background-color: #0000FF;" class="col-md-6">主要研究方向</div>
+											<div class="col-md-3">
+												&nbsp;
+											</div>
+										</div>
+										<div>
+											技术管理
+										</div>
+										<div>
+											企业技术竞争理论
+
+										</div>
+										<div>
+											知识产权管理与维护
+										</div>
+
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											<div class="col-md-3">
+
+											</div>
+											<div style="color: #FFFFFF;background-color: #0000FF;" class="col-md-6"></div>
+											<div class="col-md-3">
+												&nbsp;
+											</div>
+										</div>
+										<div>
+											西安交通大学动力与机械工程系
+										</div>
+										<div>
+											内燃机专业工学
+										</div>
+										<div>
+											学士学位（1986年）
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											西安交通大学管理学院
+										</div>
+										<div>
+											技术经济法律研究中心
+										</div>
+										<div>
+											法学硕士学位（1992年）
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											西安交通大学管理学院
+										</div>
+										<div>
+											管理科学与工程专业
+										</div>
+										<div>
+											博士学位（1998年）
+										</div>
+										<div>
+											&nbsp;
+										</div>
+										<div>
+											加拿大Alberta大学商学院（Faculty of Business）
+										</div>
+										<div>
+											高级访问学者
+										</div>
+										<div>
+											（1999年2月—1999年6月）
+										</div>
+										<div>
+											&nbsp;
+										</div>
+									</div>
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div class="main-left-border2">
+									<div>
+										<strong>联系方式</strong>
+									</div>
+									<div>
+										&nbsp;
+									</div>
+									<div align="left" id="contact">
+										
+									</div>
+								</div>
+							</div>
+							<div class="col-md-1">
+
+							</div>
+						</div>
+						<div class="col-md-8 main-left-border2">
+							<div>
+								<strong>主要经历</strong>
+							</div>
+							<div align="center">
+								<div>
+									<img src="${proPath}/img/test2.jpg" width="80%" height="80%" />
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									1993年2月—今，西安交通大学管理学院教师。分别在工业外贸系、
+									国际贸易与金融系、国际贸易系、市场营销系任教，历任讲师、副教授、教授/博士生导师。
+									现为西安交通大学管理学院学术委员会委员，西安交大法学院学位委员会委员，
+									陕西省应急管理学会常务理事。主持国家社会科学基金重大项目、国家自然科学基金项目、
+									国家社会科学基金项目多项。发表学术论文数十篇。
+									2005年入选教育部“新世纪优秀人才支持计划”，
+									2009入选国家知识产权局“百千万知识产权人才工程”百名高层次人才培养人选。
+									2008年4月起为AOM（Academy of Management）会员。
+									2010年9月被聘为陕西省学位委员会第三届学科评议组成员。
+								</div>
+								<div>
+									聪明的猫
+								</div>
+
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									<div class="col-md-3">
+
+									</div>
+									<div style="color: #FFFFFF;background-color: #0000FF;" class="col-md-6">主要研究方向</div>
+									<div class="col-md-3">
+										&nbsp;
+									</div>
+								</div>
+								<div>
+									技术管理
+								</div>
+								<div>
+									企业技术竞争理论
+
+								</div>
+								<div>
+									知识产权管理与维护
+								</div>
+
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									<div class="col-md-3">
+
+									</div>
+									<div style="color: #FFFFFF;background-color: #0000FF;" class="col-md-6">教育背景</div>
+									<div class="col-md-3">
+										&nbsp;
+									</div>
+								</div>
+								<div>
+									西安交通大学动力与机械工程系
+								</div>
+								<div>
+									内燃机专业工学
+								</div>
+								<div>
+									学士学位（1986年）
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									西安交通大学管理学院
+								</div>
+								<div>
+									技术经济法律研究中心
+								</div>
+								<div>
+									法学硕士学位（1992年）
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									西安交通大学管理学院
+								</div>
+								<div>
+									管理科学与工程专业
+								</div>
+								<div>
+									博士学位（1998年）
+								</div>
+								<div>
+									&nbsp;
+								</div>
+								<div>
+									加拿大Alberta大学商学院（Faculty of Business）
+								</div>
+								<div>
+									高级访问学者
+								</div>
+								<div>
+									（1999年2月—1999年6月）
+								</div>
+								<div>
+									&nbsp;
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="foot">
+					12367
+				</div>
+
+			</div>
+
+			<!--
+        	作者：984801940@qq.com
+        	时间：2017-03-06
+        	描述：最右边
+        	-->
+			<div class="col-md-3">
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>

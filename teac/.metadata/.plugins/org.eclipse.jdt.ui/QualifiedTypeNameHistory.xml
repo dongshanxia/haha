@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.entity.User"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.service.TeacherNaverService"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.mapper.TeacherNavbarMapper"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.service.UserService"/>
+<fullyQualifiedTypeName name="javax.annotation.Resource"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.service.TeacherNavbarService"/>
+<fullyQualifiedTypeName name="java.io.Serializable"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.util.MyUUIDUtil"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.mapper.BaseMapper"/>
+<fullyQualifiedTypeName name="cn.xuchenbing.teac.entity.TeacherNavbar"/>
+<fullyQualifiedTypeName name="java.util.Set"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+</qualifiedTypeNameHistroy>
