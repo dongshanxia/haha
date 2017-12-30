@@ -1,0 +1,2 @@
+0:0:0:0:0:0:0:1 - - [21/Dec/2017:22:55:27 +0800] "GET //teac-user-web/register_login/register.action?userName=123123&userEname=123&userPassword=123&userEmail=1234&userSubject=volvo&userAcademy=fiat HTTP/1.1" 200 23 http-bio-8083-exec-1 503
+0:0:0:0:0:0:0:1 - - [21/Dec/2017:22:55:29 +0800] "GET //teac-user-web/register_login/login_UI.action HTTP/1.1" 200 3972 http-bio-8083-exec-2 514

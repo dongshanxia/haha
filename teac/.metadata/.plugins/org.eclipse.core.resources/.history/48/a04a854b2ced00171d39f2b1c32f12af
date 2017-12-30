@@ -1,0 +1,147 @@
+.column {
+    width: 170px;
+    float: left;
+    padding-bottom: 100px;
+  }
+  .portlet {
+    margin: 0 0 1em 0;
+    padding: 0.3em;
+  }
+  .portlet-header {
+    padding: 0.2em 0.3em;
+    margin-bottom: 0.5em;
+    position: relative;
+  }
+  .portlet-toggle {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    margin-top: -8px;
+  }
+  .portlet-close {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -8px;
+  }
+  .portlet-content {
+    padding: 0.4em;
+  }
+  .portlet-placeholder {
+    border: 1px dotted black;
+    margin: 0 1em 1em 0;
+    height: 50px;
+  }
+
+body{
+	
+	padding:0;
+	margin: 0;
+}
+
+div{
+	
+	padding:0;
+	margin: 0;
+	
+}
+
+
+/*头*/
+.top{
+	border:1px solid #000;
+	margin: 0px;
+	padding:0px;
+	height: 130px;
+	width: 100%;
+}
+#nav_yemian{
+	margin: 10px 10px 10px 10px;
+	
+	width: 100%;
+}
+
+
+
+
+
+
+/*主题*/
+.main{
+	padding:0px;
+	height: 700px;
+	width: 100%;
+	background-color: #00EE00;
+}
+
+
+.myfont20{
+	font-size:20px;
+}
+.mymain{
+	border:1px solid #000;
+}
+
+
+.foot{
+	
+	height: 100px;
+	width: 100%;
+	background-color: #245269;
+}
+
+.textright{
+	text-align: right;
+}
+.divmargin-top{
+	margin-top: 0px;
+}
+.divmargin-left{
+	margin-left: 50px;
+}
+.divmargin-right{
+	margin-right: 10px;
+}
+.divmargin-bottom{
+	margin-bottom:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-left-1{
+	background-color: #E02337;
+	padding:0px;
+	height: 700px;
+	width: 100%;
+}
+.main-left-2{
+	background-color: #E02337;
+	padding:0px;
+	height: 460px;
+	width: 100%;
+	
+}
+.main-right-1{
+	background-color: #ADADAD;
+	padding:0px;
+	height: 600px;
+	width: 100%;
+}
+.main-right-2{
+	background-color: #ADADAD;
+	padding:5px;
+	height: 460px;
+	width: 100%;
+
+}
