@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+
+
+
+
+
+
+
+
+<script src="/hugo/js/iconfont.js"></script>
+
+<link rel="stylesheet" type="text/css" href="/hugo/css/other/iconfont.css">
+<link rel="stylesheet" type="text/css" href="/hugo/css/other/idea.css">
+<link rel="stylesheet" type="text/css" href="/hugo/css/other/syntax.css">
+<link rel="stylesheet" type="text/css" href="/hugo/css/body.css">
+<link rel="stylesheet" type="text/css" href="/hugo/css/header.css">
+<link rel="stylesheet" type="text/css" href="/hugo/css/footer.css">
+<link rel="stylesheet" type="text/css" href="/hugo/css/main.css"></head>
+
+<div>
+
+<div class="container slideout-panel slideout-panel-left" id="mobile-panel"><header id="header" class="header">
+    <div class="logo-wrapper">
+        <a href="http://10.168.1.149:1313/hugo/linux/httpd/" class="logo">标题<i
+                    style="font-size: 14px; font-family: 'Microsoft YaHei',SimSun; margin-left: 16px ;">只是为了演示</i></a>
+    </div>
+
+    <nav class="site-navbar">
+        <ul id="menu" class="menu">
+            
+                <li class="menu-item">
+                    <a class="menu-item-link" href="/hugo/">首页</a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class="menu-item-link" href="/hugo/categories">博文</a>
+                </li>
+            
+                <li class="menu-item">
+                    <a class="menu-item-link" href="/hugo/about">关于</a>
+                </li>
+            
+
+        </ul>
+    </nav>
+</header>
+
+
+
+
+
+
+
+<div id="post" class="post">
+    <article>
+        
+            
+        
+
+        <h2 id="httpd访问网络配置httpd_can_network_connect">httpd访问网络配置httpd_can_network_connect</h2>
+<p>检查网络访问的配置</p>
+<p>getsebool -a | grep httpd_can_network_connect</p>
+<p>如结果如下</p>
+<p>httpd_can_network_connect &ndash;&gt; off</p>
+<p>则执行如下命令打开：</p>
+<h3 id="selinux命令临时配置重启后失效">SELinux命令，临时配置，重启后失效</h3>
+<p>setsebool httpd_can_network_connect=1</p>
+<p>写入配置文件的命令，重启后保留</p>
+<p>setsebool -P httpd_can_network_connect 1</p>
+
+        <br />
+        <div>
+            
+                <a href="http://10.168.1.149:1313/hugo/linux/linux%E5%A5%BD%E7%8E%A9%E7%9A%84/">前一页</a>
+            
+            
+                <a href="http://10.168.1.149:1313/hugo/linux/linux%E5%A5%BD%E7%8E%A9%E7%9A%84/">后一页</a>
+            
+        </div>
+    </article>
+</div><footer id="footer" class="footer">
+    <div class="social-links">
+        <a href="http://our.dongshanxia.top:38888/"  title="gitlab">
+            <svg class="icon iconfont" aria-hidden="true">
+                <use xlink:href="#icon-gitlab"></use>
+            </svg>
+        </a>
+    </div>
+
+    <div class="copyright">
+
+
+
+
+  <span class="copyright-year">
+    ©
+    2021 -
+    2021
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">author</span>
+    <span><a href="http://www.beian.miit.gov.cn" target="_blank">shenmshenm</a></span>
+  </span>
+    </div>
+</footer>
+
+</div>
+</body>
+
+</html>
